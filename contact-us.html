@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset = "utf-8" />
+	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="final-style.css" />
+</head>
+
+<body>
+	<div id="container">
+		<header>
+			<div id="logo">
+				<a href="index.html">Bespoke Event Design</a>
+			</div>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about-us.html">About Us</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="testimonials.html">Testimonials</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><strong>Contact Us</strong></li>
+			</ul>
+		</nav>
+		
+		<script>
+		<!--
+		function checkform() {
+
+  		//innerHTML: Each html element has an innerHTML property associated with it.
+
+  		var frm = document.getElementById("form1");
+		var flag = true;
+
+   		if (frm.firstName.value == "" ){
+      	document.getElementById("firstName_error").innerHTML = " Your name is required!";
+      	flag = false;
+  		} else document.getElementById("firstName_error").innerHTML = " ";
+	
+   		if (frm.email.value == ""){
+   		document.getElementById("email_error").innerHTML = " Your email is required!";
+   		flag = false;
+   		} else document.getElementById("email_error").innerHTML = " ";
+
+   		if (frm.tel.value == "" || isNaN(frm.tel.value)){
+   		document.getElementById("tel_error").innerHTML = " Your telephone number is required!";
+   		flag = false;
+   		} else document.getElementById("tel_error").innerHTML = " ";
+			
+		if (frm.service.value == "select"){
+   		document.getElementById("service_error").innerHTML = " A selection is required!";
+   		flag = false;
+   		} else document.getElementById("service_error").innerHTML = " ";
+			
+	
+		if (flag == true) {
+		alert ("Your form is complete");
+		return true;
+		}
+	
+		else { 
+		return false;
+		}
+		}
+		// -->
+		</script>
+	
+		<h1>Contact Us</h1>
+		
+		<div id="contact">
+		<form method="post" autocomplete="on" action="onsubmit" id="form1" onsubmit="return checkform();">
+		
+		<table>
+		<tr>
+		<td><label>Name</label></td>
+		<td><input type="text" id="firstName" size="50"/></td>
+		<td><div id="firstName_error" class ="error"></div></td>
+		</tr>
+			
+		<tr>	
+		<td><label>Email</label></td>
+		<td><input type="email" id="email" size="50"/></td>
+		<td><div id="email_error" class ="error"></div></td>
+		</tr>
+		
+		<tr>
+		<td><label>Phone</label></td>
+		<td><input type="tel" id="tel" size="50"></td>
+		<td><div id="tel_error" class ="error"></div></td>	
+		</tr>
+		</table>
+			
+		<table>
+		<tr>
+		<td><label>What service are you interested in?</label></td>
+		<td><select id = "service">
+		<option value="select" selected>Select</option>
+ 		<option value="service1">Event Design</option>
+ 	 	<option value="service2">Budget Guidance</option>
+ 	 	<option value="service3">Vendor Coordination</option>
+		<option value="service3">Full Service Planning</option>
+		</select></td>
+		<td><div id="service_error" class ="error"></div></td>	
+		</tr>
+		</table>
+		
+		<table>	
+		<tr>
+		<td><label>Where did you hear of us?</label></td>
+		<td><label>Friend or family member<input name = "answer" type  = "radio" id="answer" value  = "yes" checked ></label>
+		&nbsp;
+		&nbsp;
+		<label>Social media<input name = "answer" type = "radio" value = "no"></label>
+		&nbsp;
+		&nbsp;
+		<label>Events employee<input name ="answer" type = "radio" value = "no"></label>	
+		</td>
+		<td><div id="answer_error" class ="error"></div></td>	
+		</tr>	
+
+		<tr>
+		<td><label>Anything else you'd like to tell us?</label></td>
+		<td><textarea name="goals" id="goals" rows="4" cols="60" ></textarea></td>
+		</tr>
+
+		<tr>	
+		<td><input type = "submit" value = "Submit">
+		<input type = "reset" value = "Cancel"></td>
+		</tr>	
+			
+		</table>
+		</form>	
+		</div>
+		<footer>
+ 		101 North Upper Wacker Drive &nbsp; | &nbsp;  313-568-0867 &nbsp;  | &nbsp;  <a style="color:white; text-decoration: none;" href=" mailto:info@bespokeevents.com">info@bespokeevents.com</a>
+		</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset = "utf-8" />
+	<title>Homepage</title>
+	<link rel="stylesheet" type="text/css" href="final-style.css" />
+</head>
+
+	<div id="container">
+		<header>
+			<div id="logo">
+				<a href="index.html">Bespoke Event Design</a>
+			</div>
+		</header>
+		<nav>
+			<ul>
+				<li><strong>Home</strong></li>
+				<li><a href="about-us.html">About Us</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="testimonials.html">Testimonials</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="contact-us.html">Contact Us</a></li>
+			</ul>
+		</nav>
+	<body>
+		<div id="center">
+		<h1>Seamless planning for your unique event</h1>	
+		
+		<p> We were built on the belief that every couple deserves a wedding as distinct as their love. Our exceptional planners and coordinators 
+		take the time to truly get to know their clients to ensure that every detail from the save-the-dates to the honeymoon are perfect 
+		<br>
+		<br>
+		Shoot us a note so we can grab coffee (or a drink!) and hear about your story. We are always geeked to hear a new love story.</p>
+		
+			<div class="slideshow-container">
+			
+			<div class="mySlides fade">
+			<img src="home3.jpg" alt="sangeet" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+			<img src="home2.jpg" alt="mandap" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+			<img src="home1.jpg" alt="couple" style="width:100%">
+			</div>
+
+			<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span> 
+			<span class="dot" onclick="currentSlide(2)"></span> 
+			<span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+
+		</div>
+		</div>
+		
+		<script>	
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+			showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+			showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			if (n > slides.length) {slideIndex = 1}    
+			if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+			}
+			for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";  
+			dots[slideIndex-1].className += " active";
+			}
+		</script>
+		
+		<br>
+	
+		<footer>
+ 			101 North Upper Wacker Drive &nbsp; | &nbsp;  313-568-0867 &nbsp;  | &nbsp;  <a style="color:white; text-decoration: none;" href=" mailto:info@bespokeevents.com">info@bespokeevents.com</a>
+		</footer>
+	</div>
+	</body>
+</html>
+
+
